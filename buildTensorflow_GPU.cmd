@@ -11,11 +11,4 @@ set BAZEL_VC=D:/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC
 set Bazel_LLVM=D:/Program_Files/LLVM
 set PATH=D:/Program_Files/LLVM/bin;%PATH%
 
-bazel clean 
-bazel clean --expunge  
-
-git checkout -f r2.10
-
-call configure.cmd
-
 bazel build --config=opt --config=cuda --copt=["-Iinclude"] --define=no_tensorflow_py_deps=true //tensorflow/tools/pip_package:build_pip_package --define=no_tensorflow_py_deps=true --copt=-nvcc_options=disable-warnings
