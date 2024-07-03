@@ -1,3 +1,4 @@
+set PATH=D:\Program_Files\Microsoft_Visual_Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133;%PATH%
 set PATH=D:/Program_Files/Python/311;%PATH%
 set PATH=D:/Program_Files/Python/311/Scripts;%PATH%
 @REM set PYTHON_BIN_PATH=path/to/python_virtualenv/Scripts/python.exe 
@@ -15,7 +16,7 @@ set BAZEL_VC=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC
 @REM set PATH=D:/Program_Files/LLVM/bin;%PATH%
 
 
-bazel build //tensorflow/tools/pip_package:build_pip_package --subcommands
+bazel build --copt=-ID:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/ //tensorflow/tools/pip_package:build_pip_package --subcommands
 
 @REM bazel aquery 'mnemonic("CppCompile", //tensorflow/tools/pip_package:build_pip_package)' --output=text
 
