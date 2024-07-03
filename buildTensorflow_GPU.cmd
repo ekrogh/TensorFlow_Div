@@ -1,4 +1,4 @@
-set PATH=D:\Program_Files\Microsoft_Visual_Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133;%PATH%
+set PATH=D:\Program_Files\Microsoft_Visual_Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64;%PATH%
 set PATH=D:/Program_Files/Python/311;%PATH%
 set PATH=D:/Program_Files/Python/311/Scripts;%PATH%
 @REM set PYTHON_BIN_PATH=path/to/python_virtualenv/Scripts/python.exe 
