@@ -14,7 +14,10 @@ set BAZEL_VC=D:\Program_Files\Microsoft_Visual_Studio\2019\BuildTools\VC\Tools\M
 @REM set Bazel_LLVM=D:/Program_Files/LLVM
 @REM set PATH=D:/Program_Files/LLVM/bin;%PATH%
 
-bazel build //tensorflow/tools/pip_package:build_pip_package
+
+bazel build //tensorflow/tools/pip_package:build_pip_package --subcommands
+
+@REM bazel aquery 'mnemonic("CppCompile", //tensorflow/tools/pip_package:build_pip_package)' --output=text
 
 @REM bazel build --copt=-I./include/ --config=opt --repo_env=TF_PYTHON_VERSION=3.11 //tensorflow/tools/pip_package:build_pip_package --repo_env=WHEEL_NAME=tensorflow_cpu
 
