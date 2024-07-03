@@ -5,6 +5,7 @@ set PATH=D:/Program_Files/Python/311/Scripts;%PATH%
 @REM set PYTHON_DIRECTORY=path/to/python_virtualenv/Scripts 
 
 set BAZEL_WINSDK_FULL_VERSION=10.0.19041.0
+SET INCLUDE=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include;%INCLUDE%
 @REM set BAZEL_WINSDK_FULL_VERSION=10.0.26100.0
 set BAZEL_SH=D:/Program_Files/msys64/usr/bin/bash.exe 
 set BAZEL_VS=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools
@@ -12,7 +13,7 @@ set BAZEL_VC=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC
 @REM set Bazel_LLVM=D:/Program_Files/LLVM
 @REM set PATH=D:/Program_Files/LLVM/bin;%PATH%
 
-bazel build  --copt=-ID:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/ //tensorflow/tools/pip_package:build_pip_package
+bazel build //tensorflow/tools/pip_package:build_pip_package
 
 @REM bazel build --copt=-I./include/ --config=opt --repo_env=TF_PYTHON_VERSION=3.11 //tensorflow/tools/pip_package:build_pip_package --repo_env=WHEEL_NAME=tensorflow_cpu
 

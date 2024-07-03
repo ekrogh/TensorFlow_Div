@@ -5,6 +5,7 @@ set PATH=D:/Program_Files/Python/311/Scripts;%PATH%
 @REM set PYTHON_DIRECTORY=path/to/python_virtualenv/Scripts 
 
 set BAZEL_WINSDK_FULL_VERSION=10.0.19041.0
+SET INCLUDE=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include;%INCLUDE%
 @REM set BAZEL_WINSDK_FULL_VERSION=10.0.26100.0
 set BAZEL_SH=D:/Program_Files/msys64/usr/bin/bash.exe 
 set BAZEL_VS=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools
