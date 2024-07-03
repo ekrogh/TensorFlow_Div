@@ -9,7 +9,8 @@ SET INCLUDE=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC/Tools/MS
 @REM set BAZEL_WINSDK_FULL_VERSION=10.0.26100.0
 set BAZEL_SH=D:/Program_Files/msys64/usr/bin/bash.exe 
 set BAZEL_VS=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools
-set BAZEL_VC=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC 
+set BAZEL_VC=D:\Program_Files\Microsoft_Visual_Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133
+@REM set BAZEL_VC=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC 
 @REM set Bazel_LLVM=D:/Program_Files/LLVM
 @REM set PATH=D:/Program_Files/LLVM/bin;%PATH%
 
