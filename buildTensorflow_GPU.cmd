@@ -8,7 +8,7 @@ set BAZEL_WINSDK_FULL_VERSION=10.0.26100.0
 set BAZEL_SH=D:/Program_Files/msys64/usr/bin/bash.exe 
 set BAZEL_VS=D:/Program_Files/Microsoft_Visual_Studio/2022/BuildTools
 set BAZEL_VC=D:/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC 
-set Bazel_LLVM=D:/Program_Files/LLVM
-set PATH=D:/Program_Files/LLVM/bin;%PATH%
+@REM set Bazel_LLVM=D:/Program_Files/LLVM
+@REM set PATH=D:/Program_Files/LLVM/bin;%PATH%
 
 bazel build --config=opt --config=cuda --copt=["-Iinclude"] --define=no_tensorflow_py_deps=true //tensorflow/tools/pip_package:build_pip_package --define=no_tensorflow_py_deps=true --copt=-nvcc_options=disable-warnings
