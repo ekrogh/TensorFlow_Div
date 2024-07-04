@@ -1,0 +1,27 @@
+# Use Unix-style with ':' as separator
+export PATH="/D/Users/eigil/projects/myCommands/InPath:$PATH"
+export PATH="/D/Program_Files/Python/311:$PATH"
+export MSYS_NO_PATHCONV=1
+export MSYS2_ARG_CONV_EXCL="*"
+export PATH="/d/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64:/d/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC/Tools/MSVC/14.40.33807/include:$PATH"
+# export PATH="/d/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64:$PATH"
+export PATH="/d/Program_Files/Python/311:$PATH"
+export PATH="/d/Program_Files/Python/311/Scripts:$PATH"
+export PYTHON_BIN_PATH="/d/Users/eigil/miniconda3_py311/envs/cppTF/python.exe"
+export PYTHON_LIB_PATH=/d/Users/eigil/miniconda3_py311/envs/cppTF/Lib/site-packages
+export PYTHON_DIRECTORY=/d/Users/eigil/miniconda3_py311/envs/cppTF/Scripts
+
+export BAZEL_WINSDK_FULL_VERSION=10.0.19041.0
+export INCLUDE=/d/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC/Tools/MSVC/14.40.33807/include:%INCLUDE%
+# export INCLUDE=/d/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include:%INCLUDE%
+# export BAZEL_WINSDK_FULL_VERSION=10.0.26100.0
+export BAZEL_SH=/d/Program_Files/msys64/usr/bin/bash.exe 
+export BAZEL_VS=/d/Program_Files/Microsoft_Visual_Studio/2022/BuildTools
+export BAZEL_VC=/d/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC
+# export BAZEL_VS=/d/Program_Files/Microsoft_Visual_Studio/2019/BuildTools
+# export BAZEL_VC=/d/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133
+# export BAZEL_VC=/d/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC 
+export Bazel_LLVM=/d/Program_Files/LLVM
+# export PATH=/d/Program_Files/LLVM/bin:$PATH
+
+bazel query "//tensorflow/tools/pip_package:*"
