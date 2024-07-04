@@ -1,12 +1,12 @@
-# Use Unix-style with ':' as separator
-export PATH="/D/Users/eigil/projects/myCommands/InPath:$PATH"
-export PATH="/D/Program_Files/Python/311:$PATH"
-export MSYS_NO_PATHCONV=1
-export MSYS2_ARG_CONV_EXCL="*"
 export PATH="/d/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64:/d/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC/Tools/MSVC/14.40.33807/include:$PATH"
 # export PATH="/d/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64:$PATH"
-export PATH="/d/Program_Files/Python/311:$PATH"
 export PATH="/d/Program_Files/Python/311/Scripts:$PATH"
+# Use Unix-style with ':' as separator
+export PATH="/d/Users/eigil/projects/myCommands/InPath:$PATH"
+export PATH="/d/Program_Files/Python/311:$PATH"
+export MSYS_NO_PATHCONV=1
+export MSYS2_ARG_CONV_EXCL="*"
+
 export PYTHON_BIN_PATH="/d/Users/eigil/miniconda3_py311/envs/cppTF/python.exe"
 export PYTHON_LIB_PATH=/d/Users/eigil/miniconda3_py311/envs/cppTF/Lib/site-packages
 export PYTHON_DIRECTORY=/d/Users/eigil/miniconda3_py311/envs/cppTF/Scripts
