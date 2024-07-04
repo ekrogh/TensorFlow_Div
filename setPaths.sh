@@ -1,0 +1,1 @@
+export /d/Users/eigil/projects/machineLearning/TensorFlow_Div:$PATH
