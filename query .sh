@@ -2,6 +2,9 @@ export PATH="/d/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC/Tools/M
 # export PATH="/d/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64:$PATH"
 export PATH="/d/Program_Files/Python/311/Scripts:$PATH"
 # Use Unix-style with ':' as separator
+export PATH="/d/Program_Files/NVIDlA_GPU_Computing_Toolkit/CUDA/v11.8/bin:$PATH"
+export PATH="/d/Program_Files/NVIDlA_GPU_Computing_Toolkit/CUDA/v11.8/extras/CUPTI/lib64:$PATH"
+# export PATH="/c/tools/cuda/bin:$PATH"
 export PATH="/d/Users/eigil/projects/myCommands/InPath:$PATH"
 export PATH="/d/Program_Files/Python/311:$PATH"
 export MSYS_NO_PATHCONV=1
