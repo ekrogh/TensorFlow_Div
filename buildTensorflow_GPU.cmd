@@ -2,9 +2,9 @@ set PATH=D:/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC/Tools/MSVC/
 @REM set PATH=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64;%PATH%
 set PATH=D:/Program_Files/Python/311;%PATH%
 set PATH=D:/Program_Files/Python/311/Scripts;%PATH%
-@REM set PYTHON_BIN_PATH=path/to/python_virtualenv/Scripts/python.exe 
-@REM set PYTHON_LIB_PATH=path/to/python virtualenv/lib/site-packages 
-@REM set PYTHON_DIRECTORY=path/to/python_virtualenv/Scripts 
+set PYTHON_BIN_PATH=D:\Users\eigil\miniconda3_py311\envs\cppTF\python.exe 
+set PYTHON_LIB_PATH=D:\Users\eigil\miniconda3_py311\envs\cppTF\Lib\site-packages
+set PYTHON_DIRECTORY=D:\Users\eigil\miniconda3_py311\envs\cppTF\Scripts
 
 set BAZEL_WINSDK_FULL_VERSION=10.0.19041.0
 SET INCLUDE=D:/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC/Tools/MSVC/14.40.33807/include;%INCLUDE%
