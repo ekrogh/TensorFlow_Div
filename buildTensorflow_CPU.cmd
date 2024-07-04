@@ -16,7 +16,7 @@ set BAZEL_VC=D:/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC
 @REM set BAZEL_VS=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools
 @REM set BAZEL_VC=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133
 @REM set BAZEL_VC=D:/Program_Files/Microsoft_Visual_Studio/2019/BuildTools/VC 
-@REM set Bazel_LLVM=D:/Program_Files/LLVM
+set Bazel_LLVM=D:/Program_Files/LLVM
 @REM set PATH=D:/Program_Files/LLVM/bin;%PATH%
 
 
