@@ -20,4 +20,4 @@ set Bazel_LLVM=D:/Program_Files/LLVM
 @REM set PATH=D:/Program_Files/LLVM/bin;%PATH%
 
 
-.\bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
+.\bazel-bin\tensorflow\tools\pip_package\build_pip_package \tmp\tensorflow_pkg
