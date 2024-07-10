@@ -27,4 +27,5 @@ export BAZEL_VC=/d/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC
 export Bazel_LLVM=/d/Program_Files/LLVM
 # export PATH=/d/Program_Files/LLVM/bin:$PATH
 
+rm -rf /tmp/
 bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
