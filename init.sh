@@ -30,4 +30,4 @@ export Bazel_LLVM=/d/Program_Files/LLVM
 bazel clean 
 bazel clean --expunge  
 
-./configure
+# ./configure
