@@ -19,4 +19,9 @@ set BAZEL_VC=D:/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC
 set Bazel_LLVM=D:/Program_Files/LLVM
 @REM set PATH=D:/Program_Files/LLVM/bin;%PATH%
 
+
+echo bazel query "//tensorflow:*"
+bazel query "//tensorflow:*"
+
+echo bazel query "//tensorflow/tools/pip_package:*"
 bazel query "//tensorflow/tools/pip_package:*"
