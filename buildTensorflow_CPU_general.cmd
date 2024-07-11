@@ -20,11 +20,13 @@ set Bazel_LLVM=D:/Program_Files/LLVM
 @REM set PATH=D:/Program_Files/LLVM/bin;%PATH%
 
 
-echo %1%
+echo Building %1%
+
+bazel build --config=opt --repo_env=TF_PYTHON_VERSION=3.12 //tensorflow/tools/pip_package:%1% --repo_env=WHEEL_NAME=tensorflow_cpu --define=no_tensorflow_py_deps=true
+
+
 @REM bazel build //tensorflow/tools/pip_package:build_pip_package --repo_env=WHEEL_NAME=tensorflow_cpu
 @REM bazel build //tensorflow/tools/pip_package:wheel --repo_env=WHEEL_NAME=tensorflow_cpu
-
-echo bazel build --config=opt --repo_env=TF_PYTHON_VERSION=3.12 //tensorflow/tools/pip_package:%1% --repo_env=WHEEL_NAME=tensorflow_cpu --define=no_tensorflow_py_deps=true
 
 @REM bazel build --config=win_clang --config=v2 --repo_env=TF_PYTHON_VERSION=3.12 //tensorflow/tools/pip_package:build_pip_package --repo_env=WHEEL_NAME=tensorflow_cpu
 

@@ -27,9 +27,9 @@ export BAZEL_VC=/d/Program_Files/Microsoft_Visual_Studio/2022/BuildTools/VC
 export Bazel_LLVM=/d/Program_Files/LLVM
 # export PATH=/d/Program_Files/LLVM/bin:$PATH
 
-echo $1
+echo Building  $1
 
-echo bazel build --config=opt --repo_env=TF_PYTHON_VERSION=3.12 //tensorflow/tools/pip_package:$1 --repo_env=WHEEL_NAME=tensorflow_cpu --define=no_tensorflow_py_deps=true
+bazel build --config=opt --repo_env=TF_PYTHON_VERSION=3.12 //tensorflow/tools/pip_package:$1 --repo_env=WHEEL_NAME=tensorflow_cpu --define=no_tensorflow_py_deps=true
 
 # bazel build //tensorflow/tools/pip_package:build_pip_package --repo_env=WHEEL_NAME=tensorflow_cpu
 # bazel build //tensorflow/tools/pip_package:wheel --repo_env=WHEEL_NAME=tensorflow_cpu
