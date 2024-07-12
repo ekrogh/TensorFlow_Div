@@ -21,7 +21,6 @@ set Bazel_LLVM=D:/Program_Files/LLVM
 
 
 bazel build //tensorflow:libtensorflow_cc.so
-bazel build //tensorflow:install_headers
 
 @REM bazel build //tensorflow/tools/pip_package:build_pip_package --repo_env=WHEEL_NAME=tensorflow_cpu
 @REM bazel build //tensorflow/tools/pip_package:wheel --repo_env=WHEEL_NAME=tensorflow_cpu

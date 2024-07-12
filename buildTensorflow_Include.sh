@@ -28,7 +28,6 @@ export Bazel_LLVM=/d/Program_Files/LLVM
 # export PATH=/d/Program_Files/LLVM/bin:$PATH
 
 
-bazel build //tensorflow:libtensorflow_cc.so
 bazel build //tensorflow:install_headers
 
 # bazel build //tensorflow/tools/pip_package:build_pip_package --repo_env=WHEEL_NAME=tensorflow_cpu
