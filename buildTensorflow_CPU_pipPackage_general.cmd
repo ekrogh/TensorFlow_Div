@@ -22,7 +22,7 @@ set Bazel_LLVM=D:/Program_Files/LLVM
 
 echo Building %1%
 
-bazel build --config=opt --repo_env=TF_PYTHON_VERSION=3.12 //tensorflow:%1% --repo_env=WHEEL_NAME=tensorflow_cpu --define=no_tensorflow_py_deps=true
+bazel build --config=opt --repo_env=TF_PYTHON_VERSION=3.12 //tensorflow/tools/pip_package:%1% --repo_env=WHEEL_NAME=tensorflow_cpu --define=no_tensorflow_py_deps=true
 
 
 @REM bazel build //tensorflow/tools/pip_package:build_pip_package --repo_env=WHEEL_NAME=tensorflow_cpu
